@@ -1,0 +1,20 @@
+---
+const { class: className } = Astro.props;
+---
+
+<button {...$$props}>
+    <slot />
+</button>
+
+<style>
+    button {
+        line-height: 3;
+        min-width: 14.5em;
+        width: fit-content;
+        background-color: #39435e;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        padding-inline: 2em;
+    }
+</style>

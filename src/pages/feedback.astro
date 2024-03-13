@@ -1,0 +1,25 @@
+---
+import SideMenu from "../components/SideMenu.astro";
+import BasicLayout from "../layouts/BasicLayout.astro";
+import SEO from "../layouts/SEO.astro";
+import SectJobs from "../sections/SectJobs.astro";
+import SectQuote from "../sections/SectQuote.astro";
+import SectForm from "../sections/SectForm.astro";
+---
+
+<BasicLayout>
+    <SEO
+        slot="seo"
+        title="Feedback"
+        description="See you on Mars!"
+        imageUrls={{ fb: "" }}
+    />
+    <main>
+        <SectJobs />
+        <SectQuote />
+        <SectForm />
+    </main>
+    <Fragment slot="after-footer">
+        <SideMenu />
+    </Fragment>
+</BasicLayout>

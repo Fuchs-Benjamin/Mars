@@ -1,0 +1,24 @@
+---
+const { text, author } = Astro.props;
+---
+
+<article>
+    <p class="text">"{text}"</p>
+    <p class="author">{author}</p>
+</article>
+
+<style lang="scss">
+    article {
+        background-color: hsl(var(--c-accent));
+        padding: 110px 120px;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .author {
+        color: rgb(253, 155, 64);
+        text-align: right;
+        margin-top: 50px;
+    }
+</style>

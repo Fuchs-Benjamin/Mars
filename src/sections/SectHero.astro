@@ -1,0 +1,54 @@
+---
+import Button from "../components/Button.astro";
+import planetSvg from "../assets/img/header-planet.svg";
+import rocketSvg from "../assets/img/header-rocket.svg";
+import { Image } from "astro:assets";
+---
+
+<section>
+    <div class="container">
+        <h1>Mars</h1>
+        <p>World full of red sand</p>
+        <Button>More Information</Button>
+        <Image src={planetSvg} alt="Planet" class="planet" />
+        <Image src={rocketSvg} alt="Rocket" class="rocket" />
+    </div>
+</section>
+
+<style>
+    section {
+        overflow: clip;
+    }
+    h1 {
+        font-size: 180px;
+        font-weight: 500;
+        line-height: 1;
+    }
+    .container {
+        position: relative;
+        padding-block: 80px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 0;
+    }
+    p {
+        font-size: 60px;
+        font-weight: 500;
+    }
+    .planet {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -2;
+    }
+    .rocket {
+        position: absolute;
+        z-index: -1;
+        top: calc(50% - 10vw);
+        left: calc(50% - 12vw);
+        width: 22.5vw;
+        height: auto;
+    }
+</style>

@@ -1,14 +1,14 @@
 ---
-import type { OpenGraphProps } from './OpenGraph.astro';
-import OpenGraph from './OpenGraph.astro';
+import type { OpenGraphProps } from "./OpenGraph.astro";
+import OpenGraph from "./OpenGraph.astro";
 
-interface Props extends Omit<OpenGraphProps, 'siteName'> {
+interface Props extends Omit<OpenGraphProps, "siteName"> {
   keywords?: string;
 }
 
 const { keywords, description, title, ...props } = Astro.props;
 
-const siteName = import.meta.env.SITE_NAME;
+const siteName = import.meta.env.SITE_NAME_TITLE;
 ---
 
 <>

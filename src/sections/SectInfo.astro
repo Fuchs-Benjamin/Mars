@@ -1,0 +1,83 @@
+---
+import alienImg from "../assets/img/section-2-alien.svg";
+import alieneyeImg from "../assets/img/section-2-alien-eye.svg";
+import planets from "../assets/img/section-2-planets.svg";
+import { Image } from "astro:assets";
+---
+
+<section>
+    <div class="container">
+        <div class="decoration">
+            <div class="alien">
+                <Image src={alienImg} alt="Alien-pic" class="alien__body" />
+                <Image src={alieneyeImg} alt="Alien-eye" class="alien__eye" />
+            </div>
+            <Image src={planets} alt="Planets" class="planets" />
+        </div>
+        <div class="content">
+            <h2>About the Planet</h2>
+            <p>
+                Марс - это четвертая планета от Солнца. Его масса составляет
+                6,39E23 kg. Атмосферное давление на марсе составляет 6.01 мбар,
+                а уровень кислорода в ней достигает всего лишь 0,145%.
+                Температуры достигают от -153 до +35 градусов Цельсия. Один год
+                на Марсе равен 687 дней
+            </p>
+            <!-- </div> HOMEWORK:POSITION THE DECORATION! -->
+        </div>
+    </div>
+
+    <style lang="scss">
+        section {
+        }
+        .container {
+            min-height: 100vh;
+            padding-block: 220px;
+            position: relative;
+        }
+        .content {
+            max-width: 890px;
+            margin-left: auto;
+        }
+        h2 {
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 70px;
+        }
+        p {
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .decoration {
+            display: grid;
+            place-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            &:hover {
+                .alien__eye {
+                    left: 43%;
+                }
+            }
+        }
+        .alien {
+            position: absolute;
+            right: calc(50% - 45px);
+            bottom: calc(50% - 40px);
+            z-index: -1;
+            &__body {
+            }
+            &__eye {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: calc(43% + 10px);
+                top: 70px;
+                transition: 1s;
+            }
+        }
+    </style>
+</section>

@@ -1,0 +1,26 @@
+<svg width="202.484131" height="236.304886" viewBox="0 0 202.484 236.305" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_84_164_dd" x="50.000000" y="89.000000" width="152.484131" height="147.304886" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="3.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<circle id="Ellipse 74" cx="85.500000" cy="85.500000" r="85.500000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<ellipse id="Ellipse 75" cx="85.500000" cy="83.000000" rx="77.500000" ry="51.000000" fill="#1C1C1C" fill-opacity="1.000000"/>
+	<path id="Vector 30" d="M113 46C141.833 57.1667 183.5 87.1 119.5 117.5C134.5 105.833 154.2 75.2 113 46Z" fill="#666666" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<g filter="url(#filter_84_164_dd)">
+		<rect id="Rectangle 46" x="134.839111" y="132.231018" rx="5.000000" width="31.000000" height="86.000000" transform="rotate(48.2804 134.839111 132.231018)" fill="#FD9B40" fill-opacity="1.000000"/>
+		<path id="Ellipse 76" d="M169.215 156.512C164.545 160.675 158.879 163.018 153.09 163.592C146.864 164.221 140.903 162.786 135.881 159.847C130.476 156.696 126.496 152.032 124.161 146.703C121.64 140.976 121.162 134.863 122.405 129.179C123.731 123.064 126.938 117.838 131.282 113.966L150.249 135.239L169.215 156.512Z" fill="#FD9B40" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Ellipse 77" d="M128.976 154.205C124.813 149.536 122.469 143.87 121.896 138.08C121.267 131.855 122.702 125.893 125.641 120.872C128.791 115.466 133.456 111.486 138.785 109.152C144.512 106.63 150.625 106.152 156.308 107.396C162.423 108.722 167.65 111.928 171.521 116.273L150.249 135.239L128.976 154.205Z" fill="#FD9B40" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Ellipse 78" d="M139.282 159.754C142.276 163.113 146.133 165.253 150.223 166.139C154.62 167.1 158.998 166.564 162.827 164.877C166.949 163.07 170.177 160.063 172.283 156.447C174.555 152.562 175.399 148.233 174.978 144.07C174.533 139.591 172.671 135.593 169.885 132.469L154.583 146.111L139.282 159.754Z" fill="#FD9B40" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

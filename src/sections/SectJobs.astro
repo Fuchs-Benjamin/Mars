@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import astroMech from "../assets/img/AstroMech.svg";
+import astroPilot from "../assets/img/AstroPilot.svg";
+import astroElectric from "../assets/img/AstroElectric.svg";
+import cardArrow from "../assets/img/CardArrow.svg";
+---
+
+<section>
+    <div class="container container_small">
+        <h2 class="title">
+            <span>Присоединяйся к нам:</span>
+            <span class="title_job">Инженер</span>
+        </h2>
+        <div class="cards">
+            <div class="card">
+                <Image src={astroMech} alt="Job Mech" />
+                <h3>Engeneer</h3>
+                <a href=""><Image src={cardArrow} alt="Arrow" />More about...</a
+                >
+            </div>
+            <div class="card">
+                <Image src={astroMech} alt="Job Mech" />
+                <h3>Engeneer</h3>
+                <a href=""><Image src={cardArrow} alt="Arrow" />More about...</a
+                >
+            </div>
+            <div class="card">
+                <Image src={astroMech} alt="Job Mech" />
+                <h3>Engeneer</h3>
+                <a href=""><Image src={cardArrow} alt="Arrow" />More about...</a
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    section {
+        padding-block: 130px;
+    }
+    .title {
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 1;
+        &_job {
+            color: rgb(253, 155, 64);
+        }
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        min-height: 482px;
+    }
+    h2 {
+        margin-bottom: 100px;
+    }
+    .card {
+        background-color: hsl(var(--c-accent));
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        align-items: center;
+        transition: 0.4s;
+        &:hover {
+            scale: 110%;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        h3 {
+            line-height: 1;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        a {
+            display: flex;
+            gap: 20px;
+            font-size: 30px;
+            line-height: 1;
+            color: rgb(253, 155, 64);
+        }
+    }
+</style>

@@ -1,0 +1,85 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<section>
+    <div class="container container_small">
+        <h2>contact us</h2>
+        <form class="form" name="feedback" netlify>
+            <input
+                class="text"
+                type="text"
+                placeholder="name"
+                name="name"
+                required
+            />
+            <input
+                class="text"
+                type="text"
+                name="age"
+                placeholder="age"
+                required
+            />
+            <input
+                class="text"
+                type="text"
+                name="education"
+                placeholder="education"
+                required
+            />
+            <input class="checkbox" type="checkbox" name="agree" required />
+            <p class="agreement">agreement with using your personal data</p>
+            <Button>Send</Button>
+        </form>
+    </div>
+</section>
+
+<style lang="scss">
+    section {
+        padding-block: 268px;
+        background-color: #feb662;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 53px;
+        background: rgb(53, 63, 90);
+        padding: 130px 155px;
+        :global(button) {
+            align-self: center;
+        }
+    }
+    h2 {
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+        background-color: rgb(32, 37, 53);
+        padding: 4rem;
+    }
+    input.text {
+        padding: 0 1ch;
+        line-height: 2.8;
+        font-size: 20px;
+        border: 3px solid rgb(48, 56, 84);
+        background: rgb(48, 56, 84);
+        border-bottom-color: rgb(57, 67, 94);
+        transition: ease-in 0.5s;
+        &:focus-visible {
+            border-color: rgb(253, 155, 64);
+            outline: none;
+        }
+    }
+    input.checkbox {
+        align-self: center;
+        width: 60px;
+        height: 60px;
+        border: 2px solid rgb(32, 37, 53);
+        accent-color: rgb(253, 155, 64);
+    }
+    .agreement {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1;
+    }
+</style>

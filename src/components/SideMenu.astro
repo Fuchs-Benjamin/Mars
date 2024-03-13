@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/img/logo.svg";
+---
+
+<div class="root" data-side-menu>
+    <button data-side-menu-toggler>
+        <Image src={logo} alt={"Logo"} />
+        <span> navigation</span>
+    </button>
+    <nav>
+        <a href="">Something</a>
+        <a href="">Something</a>
+        <a href="">Something</a>
+        <a href="">Something</a>
+    </nav>
+</div>
+
+<script>
+    const sideMenu = document.querySelector("[data-side-menu]")!;
+    const toggler = document.querySelector(
+        "[data-side-menu-toggler]",
+    )! as HTMLButtonElement;
+    toggler.onclick = () => {
+        sideMenu.classList.toggle("open");
+    };
+</script>
+
+<style lang="scss">
+    .root {
+        display: flex;
+        position: fixed;
+        // left: calc(100% - 128px);
+        right: 0;
+        transform: translateX(calc(100% - 128px));
+        height: 80vh;
+        top: 10vh;
+        background-color: hsl(var(--c-accent));
+        transition: 0.4s;
+        &.open {
+            transform: translateX(0);
+        }
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 50px;
+        padding-left: 0;
+        padding-right: 60px;
+        gap: 80px;
+        a {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+    button {
+        padding: 50px 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        span {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 15px;
+            font-weight: 500;
+            flex-grow: 1;
+            text-align: center;
+        }
+        img {
+            height: 78px;
+            width: 78px;
+        }
+    }
+    // HOMEWORK: STYLE THE SIDEMENU!
+</style>
